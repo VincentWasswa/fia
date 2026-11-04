@@ -319,22 +319,6 @@ summary {
   display: list-item
 }
 
-blockquote,
-dd,
-dl,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-p,
-pre {
-  margin: 0
-}
-
 fieldset {
   margin: 0
 }
@@ -428,19 +412,11 @@ textarea:focus-visible {
   outline-offset: 2px
 }
 
-a[href] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0/var(--tw-text-opacity, 1));
-  text-decoration-line: none
-}
 
 a[href]:hover {
   text-decoration-line: underline
 }
 
-a[href]:not([data-ignore-weight]) {
-  font-weight: 300
-}
 
 .menu-item>a[href] {
   font-weight: 400
@@ -5060,3 +5036,107 @@ $bp-lg: 992px;
     display: none;
   }
 }
+.blue-btn {
+	color: #3393e0;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+// banner section start
+.page-hero {
+  position: relative;
+  min-height: 360px;
+  background: url("https://images.pexels.com/photos/3685837/pexels-photo-3685837.jpeg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.page-hero-box {
+  background: #1160a8;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  max-width: 680px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero-box h1 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.page-hero-box p {
+  margin: 0;
+}
+
+.page-hero-curve {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 60px;
+  display: block;
+  z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+  .page-hero { min-height: 260px; }
+  .page-hero-box { padding: 1.25rem; }
+  .page-hero-box h1 { font-size: 1.5rem; }
+  .page-hero-curve { height: 30px; }
+}
+// banner section stop
+
+// breadcrumb section start
+.breadcrumb_wrapper {
+  ol {
+      gap: 0.9rem;
+    &:first-child {
+      a {
+        color: #3393e0;
+      }
+    }
+  }
+}
+// breadcrumb section stop
+ul {
+  li {
+    i {
+      color: #3393e0;
+    }
+  }
+}
+
+// tabbed section start
+
+.nav-tabs {
+    border-bottom: 2px solid #e9ecef;
+}
+
+.nav-tabs .nav-link {
+    color: #555;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    padding: 12px 20px;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #0d6efd;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    background: transparent;
+    border-bottom: 3px solid #0d6efd;
+}
+
+.tab-content {
+    background: #fff;
+    line-height: 1.8;
+}
+
+// tabbed section stop
