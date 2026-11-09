@@ -4377,7 +4377,12 @@ label {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 900;
   color: #006fab;
 }
@@ -4436,6 +4441,21 @@ h1, h2, h3, h4, h5, h6 {
 .card-accent {
   position: relative;
 }
+.card-accent .pdf-card .pdf-id {
+  font-size: 10px;
+  font-weight: 900;
+}
+.card-accent .pdf-card h1 {
+  font-size: 1.3rem;
+  min-height: 3rem;
+}
+.card-accent .pdf-card .pdf-date {
+  color: #1160a8;
+  font-size: 10px;
+}
+.card-accent .pdf-card .pdf-category {
+  font-size: 12px;
+}
 .card-accent .card-img-top {
   height: 200px;
   object-fit: cover;
@@ -4471,6 +4491,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .accent-red {
   --accent: #dc3545;
+}
+
+.accent-blue-file {
+  background: var(--accent);
+}
+
+.accent-green-file {
+  background: #22b6af;
+}
+
+.accent-orange-file {
+  background: #efa84c;
+}
+
+.accent-red-file {
+  background: #dc3545;
 }
 
 .youtube-section h1 {
@@ -4547,11 +4583,6 @@ footer h5 {
   --card-bg: #292524;
   --body-link: #a8a29e;
   color-scheme: dark;
-}
-
-.full-bleed {
-  margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
-  margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px)));
 }
 
 .inner {
